@@ -25,4 +25,4 @@ build/Release
 node_modules
 
 # SQLite3 Database files
-.sqlite3
+*.sqlite3
