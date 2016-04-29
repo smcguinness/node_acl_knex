@@ -1,41 +1,52 @@
 {
-	"name": "acl-knex",
-	"version": "0.2.2",
-	"description": "A Knex.js backend for node_acl",
-	"keywords": [
-		"middleware",
-		"acl",
-		"web",
-		"knex",
-		"postgres",
-		"mysql"
-	],
-	"repository": "git@github.com:christophertrudel/node_acl_knex.git",
-	"author": "Christopher Trudel <christophertrudel@gmail.com>",
-	"homepage": "https://github.com/christophertrudel/node_acl_knex",
-	"engines": {
-		"node": ">= 0.4.1"
-	},
-	"main": "./index.js",
-	"dependencies": {
-		"async": "0.9.0",
-		"lodash": "2.4.1",
-		"knex": "0.6.22"
-	},
-	"devDependencies": {
-		"acl": "0.4.3",
-		"pg": "3.4.0",
-		"grunt": "0.4.5",
-		"grunt-cli": "0.1.13",
-		"load-grunt-tasks": "0.6.0",
-		"grunt-contrib-jshint": "0.9.2",
-		"mocha": "1.21.3",
-		"chai": "1.9.1",
-		"coveralls": "2.11.1",
-		"istanbul": "0.3.0"
-	},
-	"scripts": {
-		"test": "mocha test/runner.js --reporter spec",
-		"coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
-	}
+  "name": "acl-knex",
+  "version": "0.2.2",
+  "description": "A Knex.js backend for node_acl",
+  "keywords": [
+    "middleware",
+    "acl",
+    "web",
+    "knex",
+    "postgres",
+    "mysql"
+  ],
+  "repository": "git@github.com:christophertrudel/node_acl_knex.git",
+  "author": "Christopher Trudel <christophertrudel@gmail.com>",
+  "homepage": "https://github.com/christophertrudel/node_acl_knex",
+  "engines": {
+    "node": ">= 0.4.1"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "async": "0.9.0",
+    "knex": "0.10.0",
+    "lodash": "4.11.1"
+  },
+  "devDependencies": {
+    "acl": "0.4.9",
+    "chai": "3.5.0",
+    "chai-as-promised": "5.3.0",
+    "coveralls": "2.11.1",
+    "eslint": "2.8.0",
+    "eslint-config-airbnb": "^8.0.0",
+    "eslint-plugin-import": "^1.6.1",
+    "eslint-plugin-jsx-a11y": "^1.0.4",
+    "eslint-plugin-react": "^5.0.1",
+    "grunt": "0.4.5",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-jshint": "0.9.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^18.1.0",
+    "istanbul": "0.3.0",
+    "jshint": "^2.9.2",
+    "jshint-loader": "^0.8.3",
+    "load-grunt-tasks": "0.6.0",
+    "mocha": "2.4.5",
+    "pg": "3.4.0",
+    "sqlite3": "3.1.3"
+  },
+  "scripts": {
+    "test": "mocha test/runner.js -R spec",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  }
 }

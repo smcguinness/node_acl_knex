@@ -1,1 +1,1 @@
-module.exports = require("./lib/knex-backend.js");
+module.exports = require('./lib/knex-backend.js');
